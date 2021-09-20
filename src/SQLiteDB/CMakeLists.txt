@@ -12,7 +12,7 @@ target_include_directories(SQLiteDB PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(SQLiteDB PUBLIC sqlite3)
 
-#if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-#    # using GCC
-#    target_link_libraries(SQLiteDB PRIVATE pthread tbb)
-#endif()
+if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    # using GCC
+    add_subdirectory("SQLite3")
+endif()
