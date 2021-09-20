@@ -11,8 +11,11 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 add_executable(runTests main.cc)
-
 target_link_libraries(runTests PUBLIC gtest_main)
+
+add_executable(runSQLLiteTests "SQLLiteDBTests.cc")
+target_link_libraries(runSQLLiteTests PUBLIC gtest_main SQLiteDB)
+
 
 
 if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
