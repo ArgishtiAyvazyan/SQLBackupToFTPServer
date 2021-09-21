@@ -6,6 +6,8 @@ project(SQLBackupToFTPServer)
 set(PROJECT_SOURCES
         "DataBaseMapper.h"
         "DataBaseMapper.cc"
+        "LoginInfoAssessorMapper.h"
+        "LoginInfoAssessorMapper.cc"
         )
 
 add_library(Mapper STATIC ${PROJECT_SOURCES})
