@@ -8,6 +8,10 @@ set(PROJECT_SOURCES
         "DataBaseMapper.cc"
         "LoginInfoAssessorMapper.h"
         "LoginInfoAssessorMapper.cc"
+        "UserDataGenerator.h"
+        "UserDataGenerator.cc"
+        "UserDataAccessorMapper.h"
+        "UserDataAccessorMapper.cc"
         )
 
 add_library(Mapper STATIC ${PROJECT_SOURCES})
