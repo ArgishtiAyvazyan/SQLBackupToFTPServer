@@ -11,12 +11,13 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 add_executable(runTests main.cc)
-target_link_libraries(runTests PUBLIC gtest_main)
+target_link_libraries(runTests PUBLIC gtest_main FTPClient)
 
 add_executable(runSQLLiteTests "SQLLiteDBTests.cc")
 target_link_libraries(runSQLLiteTests PUBLIC gtest_main SQLiteDB)
 
-
+add_executable(runDataBaseMapperTests "DataBaseMapperTests.cc")
+target_link_libraries(runDataBaseMapperTests PUBLIC gtest_main Mapper)
 
 if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     # using GCC
