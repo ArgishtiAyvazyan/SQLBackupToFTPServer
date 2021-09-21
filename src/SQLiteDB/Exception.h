@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_EXCEPTION_H
 
 /**
- * @file        DataBase.h
+ * @file        Exception.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of Exception class.
  * @date        9/20/2021
@@ -10,7 +10,7 @@
  */
 
 
-#include <exception>
+#include <stdexcept>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 namespace sqlite {
@@ -37,7 +37,7 @@ public:
         , m_errorCode(errorCode)
     { }
 
-    error_t getErrorCode() const noexcept
+    [[nodiscard]] error_t getErrorCode() const noexcept
     {
         return m_errorCode;
     }

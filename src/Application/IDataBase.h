@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_IDATABASE_H
 
 /**
- * @file        DataBase.h
+ * @file        IDataBase.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of IDataBase class.
  * @date        9/21/2021
@@ -23,6 +23,13 @@ namespace app {
 class IDataBase
 {
 public:
+
+    IDataBase() = default;
+    IDataBase(const IDataBase&) = default;
+    IDataBase(IDataBase&&) noexcept = default;
+    IDataBase& operator=(const IDataBase&) = default;
+    IDataBase& operator=(IDataBase&&) noexcept = default;
+    virtual ~IDataBase() = default;
 
     /**
      * @brief           Instantiate a new DataBase object and try to open a new database connection.

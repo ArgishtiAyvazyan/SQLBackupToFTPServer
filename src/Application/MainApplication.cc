@@ -1,5 +1,5 @@
 /**
- * @file        DataBase.h
+ * @file        MainApplication.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of IDataBase class.
  * @date        9/21/2021
@@ -48,7 +48,7 @@ int MainApplication::execute()
 
 void MainApplication::createDB()
 {
-    auto userData = m_pUserDataAcc->loadUserData();
+    const auto userData = m_pUserDataAcc->loadUserData();
     std::cout << "User data loaded." << std::endl;
     m_pDataBase->connect(m_pLoginInfoAcc->getDataBasePath());
     m_pDataBase->storeData(userData);

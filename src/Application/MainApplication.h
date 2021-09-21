@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_MAINAPPLICATION_H
 
 /**
- * @file        DataBase.h
+ * @file        MainApplication.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of IDataBase class.
  * @date        9/21/2021
@@ -11,7 +11,6 @@
 
 #include <memory>
 
-#include "UserData.h"
 #include "IDataBase.h"
 #include "IClient.h"
 #include "ILoginInfoAssessor.h"

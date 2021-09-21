@@ -1,5 +1,5 @@
 /**
- * @file        DataBase.h
+ * @file        DataBase.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of DataBase class.
  * @date        9/20/2021

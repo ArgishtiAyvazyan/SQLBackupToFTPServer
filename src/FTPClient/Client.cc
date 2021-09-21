@@ -1,5 +1,5 @@
 /**
- * @file        DataBase.h
+ * @file        Client.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of DataBase class.
  * @date        9/21/2021
@@ -37,16 +37,16 @@ Client::Client(std::string userName
 
 void Client::upload(std::string_view filePath)
 {
-    HINTERNET hInternet = InternetOpen(nullptr, INTERNET_OPEN_TYPE_DIRECT, nullptr, nullptr, 0);
+    const HINTERNET hInternet = InternetOpen(nullptr, INTERNET_OPEN_TYPE_DIRECT, nullptr, nullptr, 0);
 
-	HINTERNET hFtpSession = InternetConnect(hInternet
-		, m_ftpHost.c_str()
-		, m_ftpPort
-		, m_userName.c_str()
-		, m_password.c_str()
-		, INTERNET_SERVICE_FTP
-		, INTERNET_FLAG_PASSIVE
-		, 0);
+    const HINTERNET hFtpSession = InternetConnect(hInternet
+        , m_ftpHost.c_str()
+        , m_ftpPort
+        , m_userName.c_str()
+        , m_password.c_str()
+        , INTERNET_SERVICE_FTP
+        , INTERNET_FLAG_PASSIVE
+        , 0);
 
     if (nullptr == hFtpSession)
     {
@@ -54,11 +54,11 @@ void Client::upload(std::string_view filePath)
                                    + std::to_string(GetLastError())};
     }
 
-	const auto status = FtpPutFile(hFtpSession
-		, filePath.data()
-		, m_remotePath.data()
-		, FTP_TRANSFER_TYPE_BINARY
-		, 0);
+    const auto status = FtpPutFile(hFtpSession
+        , filePath.data()
+        , m_remotePath.data()
+        , FTP_TRANSFER_TYPE_BINARY
+        , 0);
 
     if (!status)
     {
@@ -66,8 +66,8 @@ void Client::upload(std::string_view filePath)
                                    + std::to_string(GetLastError())};
     }
 
-	InternetCloseHandle(hFtpSession);
-	InternetCloseHandle(hInternet);
+    InternetCloseHandle(hFtpSession);
+    InternetCloseHandle(hInternet);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_ICLIENT_H
 
 /**
- * @file        DataBase.h
+ * @file        IClient.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of IClient class.
  * @date        9/21/2021
@@ -27,7 +27,7 @@ public:
     IClient(IClient&&) noexcept = default;
     IClient& operator=(const IClient&) = default;
     IClient& operator=(IClient&&) noexcept = default;
-    ~IClient() = default;
+    virtual ~IClient() = default;
 
     /**
      * @brief               Connects to the FTP server.

@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_CLIENTMAPPER_H
 
 /**
- * @file        DataBase.h
+ * @file        ClientMapper.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of ClientMapper class.
  * @date        9/21/2021

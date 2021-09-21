@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_CLIENT_H
 
 /**
- * @file        DataBase.h
+ * @file        Client.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of DataBase class.
  * @date        9/21/2021

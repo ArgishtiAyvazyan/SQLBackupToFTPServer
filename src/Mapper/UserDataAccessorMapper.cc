@@ -1,7 +1,7 @@
 /**
- * @file        DataBase.h
+ * @file        UserDataAccessorMapper.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
- * @brief       Implementation of UserDataGenerator class.
+ * @brief       Implementation of UserDataAccessorMapper class.
  * @date        9/21/2021
  * @copyright   Copyright (c) 2021
  */

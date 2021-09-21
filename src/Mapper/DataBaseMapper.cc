@@ -1,6 +1,6 @@
 
 /**
- * @file        DataBase.h
+ * @file        DataBaseMapper.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of DataBaseMapper class.
  * @date        9/21/2021

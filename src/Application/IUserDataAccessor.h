@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_IUSERDATAACCESSOR_H
 
 /**
- * @file        DataBase.h
+ * @file        IUserDataAccessor.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of IUserDataAccessor class.
  * @date        9/21/2021
@@ -27,7 +27,7 @@ public:
     IUserDataAccessor(IUserDataAccessor&&) noexcept = default;
     IUserDataAccessor& operator=(const IUserDataAccessor&) = default;
     IUserDataAccessor& operator=(IUserDataAccessor&&) noexcept = default;
-    ~IUserDataAccessor() = default;
+    virtual ~IUserDataAccessor() = default;
 
     /**
      * @brief Gets the user data.

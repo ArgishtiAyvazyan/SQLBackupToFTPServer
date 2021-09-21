@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_LOGININFOASSESSORMAPPER_H
 
 /**
- * @file        DataBase.h
+ * @file        LoginInfoAssessorMapper.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of LoginInfoAssessorMapper class.
  * @date        9/21/2021
@@ -20,7 +20,7 @@ class LoginInfoAssessorMapper : public app::ILoginInfoAssessor
 public:
 
     LoginInfoAssessorMapper() = default;
-    ~LoginInfoAssessorMapper() = default;
+    ~LoginInfoAssessorMapper() override = default;
     LoginInfoAssessorMapper(const LoginInfoAssessorMapper&) = delete;
     LoginInfoAssessorMapper(LoginInfoAssessorMapper&&) noexcept = delete;
     LoginInfoAssessorMapper& operator=(const LoginInfoAssessorMapper&) = delete;

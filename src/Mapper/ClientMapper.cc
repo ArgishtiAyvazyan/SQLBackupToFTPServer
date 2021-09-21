@@ -1,5 +1,5 @@
 /**
- * @file        DataBase.h
+ * @file        ClientMapper.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of ClientMapper class.
  * @date        9/21/2021

@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_DATABASEMAPPER_H
 
 /**
- * @file        DataBase.h
+ * @file        DataBaseMapper.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of DataBaseMapper class.
  * @date        9/21/2021
@@ -25,7 +25,7 @@ class DataBaseMapper : public app::IDataBase
 public:
 
     DataBaseMapper();
-    ~DataBaseMapper();
+    ~DataBaseMapper() override;
 
     DataBaseMapper(const DataBaseMapper&) = delete;
     DataBaseMapper(DataBaseMapper&&) noexcept = delete;

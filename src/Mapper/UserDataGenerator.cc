@@ -1,5 +1,5 @@
 /**
- * @file        DataBase.h
+ * @file        UserDataGenerator.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of UserDataGenerator class.
  * @date        9/21/2021

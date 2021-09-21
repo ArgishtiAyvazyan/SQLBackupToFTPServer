@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_ILOGININFOASSESSOR_H
 
 /**
- * @file        DataBase.h
+ * @file        ILoginInfoAssessor.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of ILoginInfoAssessor class.
  * @date        9/21/2021
@@ -27,7 +27,7 @@ public:
     ILoginInfoAssessor(ILoginInfoAssessor&&) noexcept = default;
     ILoginInfoAssessor& operator=(const ILoginInfoAssessor&) = default;
     ILoginInfoAssessor& operator=(ILoginInfoAssessor&&) noexcept = default;
-    ~ILoginInfoAssessor() = default;
+    virtual ~ILoginInfoAssessor() = default;
 
     /**
      * @brief  Gets the user set the DataBase path.

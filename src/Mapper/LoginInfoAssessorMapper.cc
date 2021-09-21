@@ -1,5 +1,5 @@
 /**
- * @file        DataBase.h
+ * @file        LoginInfoAssessorMapper.cc
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Implementation of LoginInfoAssessorMapper class.
  * @date        9/21/2021

@@ -2,7 +2,7 @@
 #define SQLBACKUPTOFTPSERVER_USERDATAGENERATOR_H
 
 /**
- * @file        DataBase.h
+ * @file        UserDataGenerator.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
  * @brief       Declaration of UserDataGenerator class.
  * @date        9/21/2021

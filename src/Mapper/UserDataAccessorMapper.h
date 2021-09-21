@@ -1,7 +1,7 @@
 /**
- * @file        DataBase.h
+ * @file        UserDataAccessorMapper.h
  * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
- * @brief       Declaration of UserDataGenerator class.
+ * @brief       Declaration of UserDataAccessorMapper class.
  * @date        9/21/2021
  * @copyright   Copyright (c) 2021
  */
@@ -25,7 +25,7 @@ public:
     UserDataAccessorMapper(UserDataAccessorMapper&&) noexcept = default;
     UserDataAccessorMapper& operator=(const UserDataAccessorMapper&) = default;
     UserDataAccessorMapper& operator=(UserDataAccessorMapper&&) noexcept = default;
-    ~UserDataAccessorMapper() = default;
+    ~UserDataAccessorMapper() override = default;
 
     /**
      * @brief Gets the user data.
