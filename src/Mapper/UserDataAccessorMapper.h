@@ -19,6 +19,7 @@ namespace mapping {
 
 class UserDataAccessorMapper : public app::IUserDataAccessor
 {
+public:
     UserDataAccessorMapper() = default;
     UserDataAccessorMapper(const UserDataAccessorMapper&) = default;
     UserDataAccessorMapper(UserDataAccessorMapper&&) noexcept = default;
