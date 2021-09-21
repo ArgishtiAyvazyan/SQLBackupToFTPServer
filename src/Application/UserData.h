@@ -50,13 +50,17 @@ public:
         return m_age;
     }
 
+    [[nodiscard]] auto operator<=>(const UserData&) const = default;
+
 private:
     std::string m_name;
     std::string m_surname;
     int m_age;
 };
 
-std::ostream& operator<<(std::ostream& os, const UserData& data)
+
+template <typename TOstream>
+TOstream& operator<<(TOstream& os, const UserData& data)
 {
     os << data.getName() << ", " << data.getSurname() << ", " << data.getAge();
     return os;
