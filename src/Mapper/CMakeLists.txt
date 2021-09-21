@@ -12,9 +12,11 @@ set(PROJECT_SOURCES
         "UserDataGenerator.cc"
         "UserDataAccessorMapper.h"
         "UserDataAccessorMapper.cc"
+        "ClientMapper.h"
+        "ClientMapper.cc"
         )
 
 add_library(Mapper STATIC ${PROJECT_SOURCES})
 target_include_directories(Mapper PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-target_link_libraries(Mapper PUBLIC Application SQLiteDB)
+target_link_libraries(Mapper PUBLIC Application SQLiteDB FTPClient)

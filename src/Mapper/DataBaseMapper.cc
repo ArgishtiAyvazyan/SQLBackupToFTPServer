@@ -1,6 +1,11 @@
-//
-// Created by argis on 9/21/2021.
-//
+
+/**
+ * @file        DataBase.h
+ * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
+ * @brief       Implementation of DataBaseMapper class.
+ * @date        9/21/2021
+ * @copyright   Copyright (c) 2021
+ */
 
 #include "DataBase.h"
 #include <cassert>

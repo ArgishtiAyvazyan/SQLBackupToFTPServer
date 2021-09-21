@@ -1,9 +1,13 @@
-//
-// Created by argis on 9/21/2021.
-//
-
 #ifndef SQLBACKUPTOFTPSERVER_DATABASEMAPPER_H
 #define SQLBACKUPTOFTPSERVER_DATABASEMAPPER_H
+
+/**
+ * @file        DataBase.h
+ * @author      Argishti Ayvazyan (ayvazyan.argishti@gmail.com)
+ * @brief       Declaration of DataBaseMapper class.
+ * @date        9/21/2021
+ * @copyright   Copyright (c) 2021
+ */
 
 #include "IDataBase.h"
 
