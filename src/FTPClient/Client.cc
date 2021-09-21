@@ -60,7 +60,7 @@ void Client::upload(std::string_view filePath)
 		, FTP_TRANSFER_TYPE_BINARY
 		, 0);
 
-    if (status)
+    if (!status)
     {
         throw std::runtime_error {"ERROR: File sending failed. Error code:"s
                                    + std::to_string(GetLastError())};
